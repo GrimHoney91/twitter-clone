@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+.entry-panel {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    --t-blue: rgb(29 161 242);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ep-l {
+    width: 55%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+.logo-bg {
+    display: block;
+    height: 100%;
+}
+.w-logo {
+    height: 48%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ep-r {
+    background-color: white;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+.ep-t-logo {
+    height: 4rem;
+    width: 4rem;
+}
+.ep-r-s1 {
+    font-size: 7rem;
+    font-weight: 900;
+    font-family: 'Kanit', sans-serif;
+    padding: 4.8rem 0rem;
+}
+.ep-r-s2 {
+    font-size: 3.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    padding-bottom: 2.5rem;
+}
+.ep-r-s3 {
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+.ep-btn-c {
+    display: flex;
+    flex-direction: column;
+}
+.ep-btn-c > * {
+    margin-bottom: 1rem;
+}
+.ep-r button {
+    width: 48%;
+    border-radius: 2.5rem;
+    padding: 0.8rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid rgb(207, 217, 222);
+    letter-spacing: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.ep-btn-c button img {
+    height: 2rem;
+    margin-right: 1rem;
+}
+.ep-btn-c button span {
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.ep-btn-c button:not(:nth-child(4)){
+    background-color: #fff;
+}
+
+.ep-btn-c button:not(:nth-child(4)):hover {
+    background-color: rgba(220, 220, 220, 0.6);
+}
+.ep-btn-c button:nth-child(4) {
+    background-color: var(--t-blue);
+    color: #fff;
+}
+.ep-btn-c button:nth-child(4):hover {
+    background-color: rgb(26, 126, 225);
+}
+.ep-lc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 48%;
+}
+.ep-lc span:not(:nth-child(2)) {
+    flex: 1;
+    height: 0.05rem;
+    background-color: rgb(207, 217, 222);
+}
+.ep-lc span:nth-child(2) {
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    padding: 0rem 0.5rem;
+}
+.ep-btn-c p {
+    width: 48%;
+    font-size: 1.15rem;
+    color: rgb(83, 100, 113);
+}
+.ep-btn-c p a {
+    color: var(--t-blue);
+    cursor: pointer;
+}
+.ep-btn-c p a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--t-blue);
+}
+.ep-si-btn  {
+    color: var(--t-blue);
+    background-color: #fff;
+}
+.ep-si-btn:hover {
+    background-color: rgba(135, 206, 250, 0.2);
+}
